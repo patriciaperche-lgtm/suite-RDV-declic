@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<!-- saved from url=(0210)file:///Users/patriciaperche/Documents/RDV%20DECLIC%20PAGE%20DE%20VENTE/Suite%20du%20Pitch%20au%20Grill%20%E2%80%94%20Patricia%20Perche_files/Suite%20du%20Pitch%20au%20Grill%20%E2%80%94%20Patricia%20Perche.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suite du Pitch au Grill — Patricia Perche</title>
+  <link href="./Suite du Pitch au Grill — Patricia Perche_files/css2" rel="stylesheet">
+  <style>
+    :root {
+      --dark:  #4A6275;
+      --light: #F0EFEB;
+      --green: #9FC7AA;
+      --sand:  #D6CE95;
+      --white: #FFFFFF;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-style: normal !important;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.75;
+    }
+
+    /* ── NAV ───────────────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--sand);
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+      gap: 20px;
+    }
+    .nav-logo {
+      font-family: 'Space Mono', monospace;
+      font-weight: 400;
+      font-size: 0.92rem;
+      letter-spacing: 0.06em;
+      color: var(--dark);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      flex-shrink: 0;
+    }
+    .nav-logo-badge {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.52rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 1.5px solid var(--dark);
+      border-radius: 100px;
+      padding: 3px 9px;
+      color: var(--dark);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.83rem;
+      font-weight: 400;
+      color: var(--dark);
+      text-decoration: none;
+      opacity: 0.65;
+      transition: opacity 0.2s;
+    }
+    .nav-links a:hover { opacity: 1; }
+    .nav-cta {
+      font-size: 0.83rem;
+      font-weight: 500;
+      background: var(--green);
+      color: var(--dark);
+      padding: 9px 20px;
+      border-radius: 3px;
+      text-decoration: none;
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: #8ab99a; }
+    @media (max-width: 700px) { .nav-links { display: none; } }
+
+    /* ── HERO ──────────────────────────────────────────── */
+    .hero {
+      background: var(--dark);
+      color: var(--light);
+      padding: 88px 24px 76px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 68% 28%, rgba(159,199,170,0.13) 0%, transparent 58%),
+        radial-gradient(ellipse at 22% 78%, rgba(214,206,149,0.09) 0%, transparent 52%);
+      pointer-events: none;
+    }
+    .hero-eyebrow {
+      font-size: 0.73rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green);
+      display: block;
+      margin-bottom: 22px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.9rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--white);
+      max-width: 700px;
+      margin: 0 auto 26px;
+    }
+    .hero p {
+      max-width: 580px;
+      margin: 0 auto;
+      color: var(--light);
+      opacity: 0.76;
+      font-size: 1rem;
+    }
+    .hero-rule {
+      width: 44px;
+      height: 2px;
+      background: var(--green);
+      margin: 34px auto 0;
+    }
+
+    /* ── LAYOUT ────────────────────────────────────────── */
+    .container      { max-width: 800px;  margin: 0 auto; padding: 0 24px; }
+    .container-wide { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+    section         { padding: 72px 24px; }
+    section.alt     { background: var(--white); }
+    section.dark-s  { background: var(--dark); color: var(--light); }
+
+    /* ── TYPOGRAPHIE ───────────────────────────────────── */
+    .label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--green);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .dark-s .label { color: var(--sand); }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.55rem, 3.5vw, 2.25rem);
+      font-weight: 600;
+      line-height: 1.22;
+      color: var(--dark);
+      margin-bottom: 18px;
+    }
+    .dark-s h2 { color: var(--white); }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    p { margin-bottom: 16px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── INTRO ─────────────────────────────────────────── */
+    .intro-block { max-width: 680px; margin: 0 auto; }
+    .intro-block p { font-size: 1rem; }
+    .intro-divider {
+      width: 1px;
+      height: 52px;
+      background: var(--sand);
+      margin: 34px auto;
+    }
+
+    /* Citation — sans italique, alignée à gauche */
+    .signal-block {
+      border-left: 3px solid var(--green);
+      padding: 20px 26px;
+      background: rgba(74,98,117,0.05);
+      margin: 28px 0;
+      border-radius: 0 5px 5px 0;
+      text-align: left;
+    }
+    .signal-block p {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 1.06rem;
+      color: var(--dark);
+      line-height: 1.72;
+      margin: 0;
+    }
+
+    /* ── BLOCAGES ──────────────────────────────────────── */
+    .blocages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+      gap: 18px;
+      margin-top: 42px;
+    }
+    .blocage-card {
+      background: var(--white);
+      border: 1px solid rgba(214,206,149,0.45);
+      border-radius: 7px;
+      padding: 24px 24px 20px;
+      position: relative;
+    }
+    .blocage-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: rgba(74,98,117,0.1);
+      line-height: 1;
+      position: absolute;
+      top: 16px;
+      right: 18px;
+    }
+    .blocage-card h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.93rem;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .blocage-card p { font-size: 0.87rem; opacity: 0.72; }
+
+    /* ── OPTION CARDS ──────────────────────────────────── */
+    .options-stack { display: flex; flex-direction: column; gap: 52px; }
+
+    .option-card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 20px rgba(74,98,117,0.08);
+    }
+    .option-card-header {
+      background: var(--dark);
+      padding: 26px 38px;
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .option-tag {
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--sand);
+    }
+    .option-card-header h3 {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .option-body { padding: 34px 38px; }
+    .option-intro { font-size: 0.97rem; opacity: 0.8; margin-bottom: 22px; }
+
+    /* ── AXES ──────────────────────────────────────────── */
+    .axes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin: 22px 0;
+    }
+    @media (max-width: 580px) { .axes-grid { grid-template-columns: 1fr; } }
+
+    .axes-col h5 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.71rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 11px;
+    }
+    .axes-col ul { list-style: none; }
+    .axes-col ul li {
+      font-size: 0.89rem;
+      opacity: 0.8;
+      padding: 5px 0 5px 18px;
+      border-bottom: 1px solid rgba(214,206,149,0.28);
+      position: relative;
+    }
+    .axes-col ul li:last-child { border-bottom: none; }
+    .axes-col ul li::before {
+      content: '›';
+      color: var(--green);
+      position: absolute;
+      left: 0;
+      font-weight: 600;
+    }
+
+    .mini-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.71rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin: 22px 0 10px;
+      display: block;
+    }
+    .inline-list { font-size: 0.9rem; opacity: 0.78; line-height: 1.85; }
+
+    .lm-badge {
+      display: inline-block;
+      background: rgba(214,206,149,0.18);
+      border: 1px solid rgba(214,206,149,0.5);
+      border-radius: 4px;
+      padding: 10px 16px;
+      font-size: 0.85rem;
+      color: var(--dark);
+      margin: 14px 0;
+      line-height: 1.6;
+    }
+
+    .price-tag {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 26px;
+      padding: 13px 24px;
+      background: var(--dark);
+      border-radius: 4px;
+    }
+    .price-amount {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--green);
+    }
+    .price-detail { font-size: 0.86rem; color: var(--light); opacity: 0.68; }
+
+    .note-places {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.79rem;
+      opacity: 0.45;
+    }
+
+    /* ── BOUTONS ───────────────────────────────────────── */
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 13px 28px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 0.87rem;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-green { background: var(--green); color: var(--dark); }
+    .btn-green:hover { background: #8ab99a; }
+    .btn-outline-light {
+      background: transparent;
+      border: 1.5px solid rgba(240,239,235,0.4);
+      color: var(--light);
+    }
+    .btn-outline-light:hover { border-color: var(--light); }
+
+    /* ── TABLE COMPARAISON ─────────────────────────────── */
+    .table-wrap { overflow-x: auto; margin-top: 42px; }
+    table { width: 100%; border-collapse: collapse; min-width: 600px; }
+    thead th {
+      background: var(--dark);
+      color: var(--light);
+      padding: 14px 18px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 0.84rem;
+      letter-spacing: 0.04em;
+    }
+    thead th:first-child { border-radius: 5px 0 0 0; }
+    thead th:last-child  { border-radius: 0 5px 0 0; }
+    tbody tr { border-bottom: 1px solid rgba(214,206,149,0.3); }
+    tbody tr:last-child  { border-bottom: none; }
+    tbody tr:nth-child(even) { background: rgba(74,98,117,0.03); }
+    tbody td {
+      padding: 12px 18px;
+      font-size: 0.87rem;
+      opacity: 0.82;
+      vertical-align: top;
+    }
+    tbody td:first-child { font-weight: 500; font-size: 0.79rem; opacity: 1; }
+    .quote-cell {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem !important;
+      opacity: 1 !important;
+    }
+
+    /* ── PRÉCISION ─────────────────────────────────────── */
+    .precision-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 38px;
+    }
+    @media (max-width: 620px) { .precision-grid { grid-template-columns: 1fr; } }
+
+    .precision-col h4 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.71rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid;
+    }
+    .precision-col.neg h4 { color: var(--sand); border-color: var(--sand); }
+    .precision-col.pos h4 { color: var(--green); border-color: var(--green); }
+
+    .precision-col ul { list-style: none; }
+    .precision-col ul li {
+      font-size: 0.9rem;
+      color: var(--light);
+      opacity: 0.82;
+      padding: 7px 0 7px 22px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      position: relative;
+    }
+    .precision-col ul li:last-child { border-bottom: none; }
+    .precision-col.neg ul li::before {
+      content: '✕';
+      color: var(--sand);
+      position: absolute;
+      left: 0;
+      font-size: 0.7rem;
+      top: 9px;
+    }
+    .precision-col.pos ul li::before {
+      content: '✓';
+      color: var(--green);
+      position: absolute;
+      left: 0;
+      top: 8px;
+    }
+
+    .closing-stmt {
+      background: rgba(159,199,170,0.1);
+      border: 1px solid rgba(159,199,170,0.28);
+      border-radius: 7px;
+      padding: 24px 28px;
+      margin-top: 36px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--light);
+      text-align: left;
+    }
+
+    /* ── FAQ ───────────────────────────────────────────── */
+    .faq-list { max-width: 680px; margin: 36px auto 0; }
+    .faq-item { border-bottom: 1px solid rgba(214,206,149,0.4); }
+    .faq-item summary {
+      cursor: pointer;
+      padding: 20px 0;
+      font-weight: 500;
+      font-size: 0.97rem;
+      color: var(--dark);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 1.25rem;
+      color: var(--green);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-answer {
+      padding: 0 0 20px;
+      font-size: 0.92rem;
+      opacity: 0.76;
+      line-height: 1.82;
+    }
+
+    /* ── FINAL CTA ─────────────────────────────────────── */
+    .final-cta {
+      background: var(--dark);
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .cta-group {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta-group .btn { margin-top: 0; }
+
+    /* ── FOOTER ────────────────────────────────────────── */
+    footer {
+      background: var(--light);
+      border-top: 1px solid rgba(214,206,149,0.45);
+      padding: 28px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .footer-logo {
+      font-family: 'Space Mono', monospace;
+      font-weight: 400;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      text-decoration: none;
+    }
+    .footer-badge {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.52rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 1.5px solid var(--dark);
+      border-radius: 100px;
+      padding: 3px 9px;
+      color: var(--dark);
+    }
+    footer small { font-size: 0.79rem; color: var(--dark); opacity: 0.42; }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAVIGATION ═════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="file:///Users/patriciaperche/Downloads/page_de_vente_post_rdv_7.html#" class="nav-logo">
+      Patricia Perche
+      <span class="nav-logo-badge">Marketing</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="file:///Users/patriciaperche/Downloads/page_de_vente_post_rdv_7.html#options">Les options</a></li>
+      <li><a href="file:///Users/patriciaperche/Downloads/page_de_vente_post_rdv_7.html#comparaison">Comparaison</a></li>
+      <li><a href="file:///Users/patriciaperche/Downloads/page_de_vente_post_rdv_7.html#faq">FAQ</a></li>
+    </ul>
+    <a href="https://cal.com/patricia-perche-marketing/30" class="nav-cta" target="_blank">RDV de cadrage — 30 min</a>
+  </div>
+</nav>
+
+
+<!-- ══ HERO ═══════════════════════════════════════════════════ -->
+<header class="hero">
+  <span class="hero-eyebrow">Suite du Pitch au Grill</span>
+  <h1>Votre pitch révèle souvent quelque chose de plus profond</h1>
+  <p>Ces 20 minutes ensemble ont certainement généré des déclics sur la pertinence de votre proposition de valeur et l'intention de votre message commercial.</p>
+  <div class="hero-rule"></div>
+</header>
+
+
+<!-- ══ INTRO ══════════════════════════════════════════════════ -->
+<section>
+  <div class="intro-block container">
+    <p>Si vous étiez dans l'embarras ou l'inconfort lors de cet exercice, lisez cette page. Vous trouverez certainement une solution.</p>
+    <div class="intro-divider"></div>
+    <p>Certaines personnes repartent du Pitch au Grill avec 3 astuces pour retravailler leur pitch et c'est suffisant. Elles savent quoi faire.</p>
+    <p>D'autres ressentent autre chose. Une gêne persistante. L'impression que le problème est ailleurs. Que même si on réécrivait le pitch mot pour mot, quelque chose resterait inconfortable. Une difficulté à s'approprier ce nouveau discours. Même en le récitant plusieurs fois, il n'entre pas dans la mémoire, il n'est pas incarné.</p>
+
+    <div class="signal-block">
+      <p>Un pitch difficile à formuler oralement est le signe qu'une réflexion plus profonde est nécessaire, sur l'offre, le positionnement, ou la façon dont vous percevez vous-même ce que vous faites.</p>
+    </div>
+
+    <p>Cette page présente les différentes façons dont nous pouvons continuer à travailler ensemble, selon où vous en êtes et ce que vous ressentez le besoin d'explorer.</p>
+  </div>
+</section>
+
+
+<!-- ══ BLOCAGES ════════════════════════════════════════════════ -->
+<section class="alt">
+  <div class="container-wide">
+    <span class="label">Ce que le Pitch au Grill révèle</span>
+    <h2>Les travers les plus fréquents</h2>
+    <p style="max-width:520px; font-size:0.96rem; opacity:0.7;">J'ai identifié les mêmes travers :</p>
+
+    <div class="blocages-grid">
+      <div class="blocage-card">
+        <span class="blocage-num">01</span>
+        <h4>Offre difficile à expliquer</h4>
+        <p>Votre expertise est claire dans votre tête. Mais quand vous devez l'expliquer à un prospect qui vous découvre, votre message devient confus.</p>
+      </div>
+      <div class="blocage-card">
+        <span class="blocage-num">02</span>
+        <h4>Absence de problème ciblé</h4>
+        <p>Vous vous adressez à "tout le monde", ce qui revient souvent à ne parler précisément à personne.</p>
+      </div>
+      <div class="blocage-card">
+        <span class="blocage-num">03</span>
+        <h4>Discours peu impactant</h4>
+        <p>Vous expliquez ce que vous faites, mais pas ce que ça change concrètement pour votre interlocuteur.</p>
+      </div>
+      <div class="blocage-card">
+        <span class="blocage-num">04</span>
+        <h4>Différenciation faible</h4>
+        <p>Votre positionnement ressemble à celui de dix autres personnes dans votre domaine. Vous le savez.</p>
+      </div>
+      <div class="blocage-card">
+        <span class="blocage-num">05</span>
+        <h4>Valeur perçue insuffisante</h4>
+        <p>Vos tarifs sont questionnés parce que la valeur n'est pas encore évidente.</p>
+      </div>
+      <div class="blocage-card">
+        <span class="blocage-num">06</span>
+        <h4>Incohérence marketing globale</h4>
+        <p>Votre site dit une chose, votre discours oral en dit une autre. Le tout manque d'une ligne directrice claire.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ OPTIONS ════════════════════════════════════════════════ -->
+<section id="options">
+  <div class="container">
+    <span class="label">Plusieurs chemins sont possibles</span>
+    <h2>Choisissez votre prochaine étape</h2>
+  </div>
+</section>
+
+<section class="alt" style="padding-top:0;">
+  <div class="container">
+    <div class="options-stack">
+
+      <!-- Option 01 — Clarification -->
+      <div class="option-card">
+        <div class="option-card-header">
+          <span class="option-tag">Option clarification</span>
+          <h3>Une séance stratégique individuelle</h3>
+        </div>
+        <div class="option-body">
+          <p class="option-intro">Parfois, une heure et demie avec le regard extérieur suffit à démêler les points de blocage.</p>
+          <p class="option-intro">Je vous aide à identifier ce qui freine l'adhésion à votre offre.</p>
+
+          <div class="axes-grid">
+            <div class="axes-col">
+              <h5>Axes travaillés</h5>
+              <ul>
+                <li>Positionnement (qui vous êtes vraiment, pour qui, et pourquoi c'est important)</li>
+                <li>Offre (ce que vous proposez réellement, et comment le rendre lisible)</li>
+                <li>Message (ce que vous dites, à qui, avec quels mots)</li>
+                <li>Perception de valeur (pourquoi les gens paient ou hésitent)</li>
+                <li>Cohérence globale entre vos différents supports</li>
+              </ul>
+            </div>
+            <div class="axes-col">
+              <h5>Résultats attendus</h5>
+              <ul>
+                <li>Comprendre précisément ce qui bloque dans votre discours ou votre offre</li>
+                <li>Repartir avec un positionnement adapté à votre marché</li>
+                <li>Avoir des formulations concrètes à tester immédiatement</li>
+                <li>Identifier vos deux ou trois priorités stratégiques réelles</li>
+                <li>Voir votre activité avec davantage de recul et de clarté</li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="mini-label">Déroulé de la séance</span>
+          <p class="inline-list">Écoute et diagnostic de votre situation actuelle, identification des points de friction stratégiques, travail en direct sur les reformulations et les pistes, synthèse des priorités et des prochaines étapes.</p>
+
+          <div class="price-tag">
+            <span class="price-amount">250 €</span>
+            <span class="price-detail">· 1h30 en visio</span>
+          </div>
+          <br>
+          <a href="https://cal.com/patricia-perche-marketing/30" class="btn btn-green" target="_blank">Réserver un RDV de cadrage — 30 min</a>
+        </div>
+      </div>
+
+      <!-- Option 02 — Transformation -->
+      <div class="option-card">
+        <div class="option-card-header">
+          <span class="option-tag">Option transformation</span>
+          <h3>Un accompagnement stratégique sur 3 mois</h3>
+        </div>
+        <div class="option-body">
+          <p class="option-intro">Certaines problématiques ne se règlent pas en une séance. Parce qu'elles demandent du temps, des ajustements progressifs, et un espace de travail régulier pour vraiment s'installer.</p>
+          <p class="option-intro">Les fondations de la stratégie commerciale reposent sur les piliers marketing (qualité de la demande, taille de l'offre, positionnement). Elles se construisent par étapes, en testant les formulations, en ajustant les messages, en corrigeant ce qui ne produit pas encore les résultats attendus.</p>
+
+          <div class="axes-grid">
+            <div class="axes-col">
+              <h5>Axes de travail</h5>
+              <ul>
+                <li>Clarification et reformulation de votre offre</li>
+                <li>Définition ou redéfinition de votre positionnement</li>
+                <li>Construction de vos messages clés</li>
+                <li>Stratégie de contenu et choix des canaux</li>
+                <li>Amélioration de votre communication écrite et orale</li>
+                <li>Présence en ligne et cohérence des supports</li>
+              </ul>
+            </div>
+            <div class="axes-col">
+              <h5>Pour qui c'est fait</h5>
+              <ul>
+                <li>Vous savez que votre problème est profond, pas superficiel</li>
+                <li>Vous êtes prêt à travailler, pas seulement à recevoir des conseils</li>
+                <li>Vous avez besoin d'un espace régulier pour garder la direction</li>
+                <li>Vous voulez un regard extérieur sur votre stratégie et de la méthode pour vous repositionner</li>
+              </ul>
+            </div>
+          </div>
+
+          <span class="mini-label">Ce que ça ressemble concrètement</span>
+          <p class="inline-list">Deux rendez-vous par mois en visio, axés sur le travail concret. Une première séance de diagnostic incluse. Un suivi personnalisé entre les séances. Un accompagnement orienté action, avec un regard extérieur constant pour ajuster la direction.</p>
+
+          <div class="price-tag">
+            <span class="price-amount">1 250 €</span>
+            <span class="price-detail">· 3 mois · 2 séances/mois</span>
+          </div>
+          <br>
+          <a href="https://cal.com/patricia-perche-marketing/30" class="btn btn-green" target="_blank">Réserver un RDV de cadrage — 30 min</a>
+          <span class="note-places">Places limitées. Démarrage après un entretien de qualification.</span>
+        </div>
+      </div>
+
+      <!-- Option 03 — Autonomie LiveMentor -->
+      <div class="option-card">
+        <div class="option-card-header">
+          <span class="option-tag">Option autonomie</span>
+          <h3>Une formation LiveMentor pour monter en compétence</h3>
+        </div>
+        <div class="option-body">
+          <p class="option-intro">Si ce dont vous avez besoin, c'est de méthode, de repères et d'un cadre pour avancer seul mais guidé par un mentor, une formation LiveMentor peut être exactement la bonne solution.</p>
+          <p class="option-intro">J'interviens en tant que mentor pour LiveMentor depuis 4 ans, j'accompagne des personnes comme vous en demande d'apprentissage et d'expérimentation.</p>
+          <p class="option-intro">LiveMentor propose des formations sur 3 mois éligibles au CPF, conçues pour les entrepreneurs pour créer ou dynamiser leur activité.</p>
+
+          <div class="axes-grid">
+            <div class="axes-col">
+              <h5>Domaines couverts</h5>
+              <ul>
+                <li>Intelligence artificielle et productivité entrepreneuriale</li>
+                <li>Entrepreneuriat et lancement d'activité</li>
+                <li>Communication et copywriting</li>
+                <li>Marketing digital et stratégie de contenu</li>
+                <li>Vente et développement commercial</li>
+              </ul>
+            </div>
+            <div class="axes-col">
+              <h5>Pour qui c'est adapté</h5>
+              <ul>
+                <li>Vous démarrez ou restructurez votre activité</li>
+                <li>Vous avez besoin d'un cadre et d'un suivi individuel</li>
+                <li>Vous voulez des outils concrets, applicables immédiatement</li>
+                <li>Vous cherchez à renforcer votre autonomie sur le long terme</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lm-badge">
+            <strong>Le rôle du mentor :</strong> vous orienter selon vos objectifs spécifiques, accompagner l'application des apprentissages et partager ressources et astuces.
+          </div>
+          <br>
+          <a href="https://cal.com/patricia-perche-marketing/30" class="btn btn-green" target="_blank">Réserver un RDV de cadrage — 30 min</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ COMPARAISON ════════════════════════════════════════════ -->
+<section id="comparaison">
+  <div class="container-wide">
+    <span class="label">Vue d'ensemble</span>
+    <h2>Quelle option vous correspond ?</h2>
+    <p style="font-size:0.96rem; opacity:0.7;">Trois chemins distincts, selon là où vous en êtes et ce que vous cherchez réellement.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Critère</th>
+            <th>La séance stratégique</th>
+            <th>Accompagnement 3 mois</th>
+            <th>Formation LiveMentor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pour qui</td>
+            <td>Ceux qui ont besoin de clarté rapide sur un point précis</td>
+            <td>Ceux dont la problématique est structurelle et demande du temps</td>
+            <td>Entrepreneurs souhaitant progresser de façon autonome avec une formation éligible CPF</td>
+          </tr>
+          <tr>
+            <td>Objectif principal</td>
+            <td>Diagnostic et clarification stratégique</td>
+            <td>Transformation durable du positionnement et de la communication</td>
+            <td>Monter en compétence sur une thématique, acquérir des outils</td>
+          </tr>
+          <tr>
+            <td>Format</td>
+            <td>1h30 en visio</td>
+            <td>6 séances réparties sur 3 mois</td>
+            <td>Formation vidéo en ligne + sessions mentor</td>
+          </tr>
+          <tr>
+            <td>Personnalisation</td>
+            <td>Entièrement personnalisée à votre situation</td>
+            <td>Entièrement personnalisée, ajustée en continu</td>
+            <td>Session mentor personnalisée (30 min tous les 15 jours) avec accès à un contenu vidéo standardisé</td>
+          </tr>
+          <tr>
+            <td>Budget</td>
+            <td>250 €</td>
+            <td>1 250 €</td>
+            <td>Variable selon le programme</td>
+          </tr>
+          <tr>
+            <td>Idéal si vous dites</td>
+            <td class="quote-cell">"Je veux comprendre ce qui coince, rapidement."</td>
+            <td class="quote-cell">"Je veux que ça change vraiment, en profondeur."</td>
+            <td class="quote-cell">"J'ai besoin de méthode et d'outils concrets."</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ══ FAQ ════════════════════════════════════════════════════ -->
+<section id="faq">
+  <div class="container">
+    <span class="label">Questions fréquentes</span>
+    <h2>FAQ</h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>Les accompagnements sont-ils éligibles au CPF ?</summary>
+        <p class="faq-answer">La formation LiveMentor est éligible au CPF. La séance stratégique et l'accompagnement sur 3 mois sont des prestations de conseil individuel qui ne relèvent pas du dispositif CPF.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Les séances se déroulent-elles en présentiel ou à distance ?</summary>
+        <p class="faq-answer">Toutes les séances se déroulent en visioconférence. La durée est de 1h30 pour la séance stratégique, et les sessions de l'accompagnement 3 mois sont réparties sur la durée du programme.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Que se passe-t-il entre les séances dans le cadre de l'accompagnement 3 mois ?</summary>
+        <p class="faq-answer">Un suivi personnalisé est assuré entre les séances selon vos avancées. L'accompagnement est orienté action : vous avancez, testez, observez, puis on ajuste ensemble à la séance suivante.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Comment choisir entre la séance stratégique et l'accompagnement 3 mois ?</summary>
+        <p class="faq-answer">Si vous avez besoin d'une clarification ponctuelle sur votre offre, votre positionnement ou votre discours, la séance stratégique suffit souvent. Si votre problème est structurel, qu'il touche à plusieurs piliers de votre stratégie et que vous avez besoin d'un espace régulier pour avancer, l'accompagnement 3 mois sera plus adapté. Ces aspects seront évalués lors du RDV de cadrage de 30 minutes. Je vous aiderai à définir le format d'accompagnement le plus adapté à votre contexte.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Peut-on commencer par la séance et poursuivre avec l'accompagnement ?</summary>
+        <p class="faq-answer">Oui, tout à fait. Beaucoup de personnes commencent par la séance stratégique pour poser un premier diagnostic, et décident ensuite de s'engager dans l'accompagnement 3 mois si elles veulent aller plus loin. Le montant de la séance est alors déduit du tarif de l'accompagnement.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FINAL CTA ══════════════════════════════════════════════ -->
+<section class="final-cta" id="contact">
+  <p style="font-size:0.72rem; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; color:var(--green); margin-bottom:16px;">Première étape</p>
+  <h2 style="color:var(--white); font-family:&#39;Playfair Display&#39;,serif; font-size:clamp(1.4rem,3vw,2rem); margin-bottom:16px;">Un RDV de cadrage — 30 minutes</h2>
+  <p style="color:var(--light); opacity:0.7; max-width:520px; margin:0 auto 38px; font-size:0.97rem;">Vous avez une idée de ce qui coince, mais pas encore de la meilleure façon d'y répondre. Ce rendez-vous permet de faire le point sur votre situation, d'identifier ce qui freine votre positionnement ou votre discours, et de déterminer quelle formule correspond à là où vous en êtes. Vous repartez avec une recommandation claire et une proposition adaptée.</p>
+  <div class="cta-group">
+    <a href="https://cal.com/patricia-perche-marketing/30" class="btn btn-green" target="_blank">Réserver un RDV de cadrage — 30 min</a>
+    <a href="file:///Users/patriciaperche/Downloads/page_de_vente_post_rdv_7.html#options" class="btn btn-outline-light">Relire les options</a>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ════════════════════════════════════════════════ -->
+<footer>
+  <a href="file:///Users/patriciaperche/Downloads/page_de_vente_post_rdv_7.html#" class="footer-logo">
+    Patricia Perche
+    <span class="footer-badge">Marketing</span>
+  </a>
+  <small>© 2025 — Tous droits réservés</small>
+</footer>
+
+
+
+</body></html>
